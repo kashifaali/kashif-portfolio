@@ -1,0 +1,1194 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-container{
+    width: 100%;
+    height: 675px;
+    background-color: #121111;
+}
+
+/* Navigation-bar css */
+
+
+
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: #26262c;
+    height: 78px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: #303038;
+    height: 78px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo{
+    width: 30%;
+    padding: 2px 0 0 90px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.k-logo{
+    font-size: 55px;
+    color: orangered;
+    font-weight: 700;
+    
+}
+
+.other-logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.nav-content{
+    width: 65%;
+    text-align: right;
+    padding: 31px 84px 0px 0px;
+    display: flex;
+    justify-content: right;
+}
+
+.nav-content ul li{
+    display: inline-block;
+}
+
+.nav-content ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0px 5px 5px;
+    margin: 0 45px 0 0px;
+    font-size: 19px;
+    font-weight: 500;
+    
+    
+}
+
+.nav-content a:hover{
+    color: orangered;
+}
+
+.nav-content a.active{
+    color: orangered;
+}
+
+.nav-icon{
+    color: white;
+    font-size: 26px;
+    display: none;
+}
+
+/* Hero section css */
+
+.hero{
+    display: flex;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.hero-content{
+    width: 44%;
+    padding: 78px 0 0 92px;
+}
+.hero-content small{
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    padding: 0 0px 0px 5px 
+}
+
+.hero-content h1{
+    font-size: 98px;
+    color: white;
+    margin: -20px 0 -20px 0;
+}
+
+.hero-content h1 strong{
+    color: orangered;
+}
+
+.hero-content p{
+    font-size: 22px;
+    color: white;
+    padding: 0px 0px 11px 5px;
+}
+
+.flow-text{
+    color: orangered;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+.cv-button{
+    padding: 6px 24px;
+    margin: 25px 5px 5px -1px;
+    font-size: 27px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    background-color: orangered;
+    color: white;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.cv-button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+    .linkedin img {
+        top: 16px;
+        left: 8px;
+        position: relative;
+        width: 47px;
+        height: 45px;
+        border-radius: 5px;
+}
+
+.hero-image{
+    transform: scaleX(-1);
+}
+
+
+/* about section css */
+
+#about{
+    width: 100%;
+    height: 550px;
+    padding-top: 105px;
+    background-color: #262526;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.about-title{
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    margin-bottom: 25px;
+    
+}
+
+.about-content{
+    display: flex;
+    height: 450px;
+
+}
+
+.about-img{
+    width: 35%;
+    text-align: right;
+    
+}
+
+
+#about .about-content .about-img img{
+    height: 352px;
+    padding: 0 11px 0 2px;
+    border-radius: 20px;
+}
+
+.responsive{
+    display: none;
+}
+
+
+
+
+.about-data{
+    width: 68%;
+    text-align: left;
+    color: white;
+    padding-left: 38px;
+}
+
+
+/* portfolio section css */
+
+#Portfolio{
+    width: 100%;
+    height: 700px;
+    background-color: #383333;
+   
+}
+
+.portfolio-title{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding-top: 101px;
+
+}
+
+.portfolio-title strong{
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.portfolio-project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 17px;
+    width: 90%;
+    margin-left: 75px;
+}
+
+.pp1{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pp1 img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 400px;
+    transition: transform 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #f74300);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 -14px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    transition: height 0.5s;
+
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.pp1:hover img{
+    transform: scale(1.1);
+}
+
+.pp1:hover .layer{
+    height: 100%;
+}
+
+/* contact page css */
+
+#Contact{
+    width: 100%;
+    height: 504px;
+    display: flex;
+    background-color: black;
+}
+
+.contact-content{
+    width: 40%;
+    height: 88%;
+    padding: 59px 0 0 83px;
+    color: white;
+}
+
+.contact-content h1{
+    font-size: 55px;
+    padding-bottom: 10px;
+}
+
+.contact-content i{
+    color: orangered;
+    padding: 14px 10px 14px 0;
+}
+
+.phone{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.contact-content p{
+    font-size: 34px;
+    padding: 10px 0;
+}
+
+.contact-form{
+    padding: 56px 2px 0 0;
+    width: 50%;
+}
+
+.contact-form input{
+    height: 48px;
+    width: 96%;
+    border-radius: 6px;
+    padding-left: 12px;
+    margin: 15px 0 0 10px;
+    border: none;
+    background-color: #272627;
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+    color: white;
+    font-size: 15px;
+    
+  }
+  
+  ::placeholder {
+    color: white;
+    font-size: 15px;
+  }
+
+
+.txtarea{
+    border-radius: 7px;
+    border: none;
+    margin: 16px 2px 2px 11px;
+    width: 95%;
+    padding: 10px;
+    height: 195px;
+    background-color: #272627;
+}
+
+.submit-btn{
+    border-radius: 9px;
+    border: none;
+    width: 63%;
+    height: 52px;
+    color: white;
+    background-color: orangered;
+    font-size: 16px;
+    margin: 12px 2px 2px 138px;
+}
+
+
+
+.social-logo i{
+    color: white;
+    padding: 6px 15px;
+    font-size: 33px;
+    margin-left: -14px
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #272627;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    padding-top: 14px;
+    font-size: 18px;
+}
+
+
+
+
+/* responsive main container section */
+
+@media only screen and (max-width: 992px) {
+    #main-container{
+        width: 100%;
+        height: 685px;
+        background-color: black;
+    
+        }
+    
+        .hero-image{
+            transform: scaleX(-1);
+            left: 368x;
+            width: 47%;
+        }
+
+        .sticky{
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+            background-color: #303038;
+            height: 78px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    
+        .hero-content pre{
+            display: none;
+        }
+    
+        
+        .hero-content h1 strong{
+            display: none;
+    
+        }
+
+        .about-img{
+            width: 29%;
+            text-align: right;
+            padding-left: 28px;
+            
+        }
+        .responsive-1{
+            display: none;
+        }
+        
+        .responsive{
+            display: block;
+        }
+        
+        .about-data{
+            width: 64%;
+            text-align: left;
+            color: white;
+            padding-left: 38px;
+        }
+
+        /* portfolio responsive css*/
+
+        #Portfolio{
+            width: 100%;
+            height: 700px;
+            background-color: #383333;
+           
+        }
+        
+        .portfolio-title{
+            width: 100%;
+            height: 90px;
+            text-align: center;
+            padding-top: 101px;
+        
+        }
+        
+        .portfolio-title strong{
+            font-size: 43px;
+            font-weight: 700;
+        }
+        
+        .portfolio-project{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 17px;
+            width: 90%;
+            margin-left: 65px;
+        }
+        
+        .pp1{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            height: 305px;
+            margin-left: -12px;
+
+        }
+        
+        .pp1 img{
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            height: 400px;
+            transition: transform 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+        }
+        
+        .layer{
+            width: 100%;
+            height: 0;
+            background: linear-gradient(rgba(0,0,0,0.6), #f74300);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 -14px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            transition: height 0.5s;
+        
+        }
+        
+        .layer h3{
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        .layer a{
+            margin-top: 20px;
+            color: #ff004f;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 60px;
+            background: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        
+        .pp1:hover img{
+            transform: scale(1.1);
+        }
+        
+        .pp1:hover .layer{
+            height: 100%;
+        }
+        
+        /* contact page responsive (*/
+
+       
+.contact-content{
+    width: 38%;
+    height: 88%;
+    padding: 59px 0 0 83px;
+    color: white;
+}
+.submit-btn{
+    border-radius: 9px;
+    border: none;
+    width: 60%;
+    height: 52px;
+    color: white;
+    background-color: orangered;
+    font-size: 16px;
+    margin: 12px 2px 2px 138px;
+}
+
+ 
+    }
+    
+
+
+@media only screen and (max-width: 768px) {
+    #main-container {
+      background-color: black;
+      height: 600px;
+    }
+    .logo {
+        width: 30%;
+        padding: 2px 0 0 34px;
+    }   
+
+    .sticky{
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        background-color: #303038;
+        height: 78px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .nav-content ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 5px 0px 5px 5px;
+        margin: 0 23px 0 0px;
+        font-size: 19px;
+        font-weight: 500;
+        
+    }
+
+    .hero-content{
+        width: 50%;
+        padding: 78px 0 0 36px;
+        position: relative;
+    }
+
+    .hero-content small{
+        font-size: 22px;
+        color: white;
+        font-weight: 700;
+        padding: 0 0px 0px 5px 
+    }
+    
+    .hero-content h1{
+        font-size: 67px;
+        color: white;
+        margin: -14px 0 -14px 0
+    }
+    .hero-content h1 span{
+        color: orangered;
+    }
+    
+    .hero-content h1 strong{
+        display: none;
+
+    }
+    
+    .hero-content p{
+        font-size: 21px;
+        color: white;
+        font-weight: 600;
+        padding: 0px 0px 11px 5px;
+    }
+    
+    .flow-text{
+        color: orangered;
+        font-size: 28px;
+        font-weight: 600;
+        white-space: pre;
+    
+    }
+    
+    .cv-button{
+        padding: 6px 24px;
+        margin: 25px 5px 5px -1px;
+        font-size: 27px;
+        font-weight: 600;
+        border: none;
+        border-radius: 7px;
+        background-color: orangered;
+        color: white;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    .hero-content pre{
+        display: none;
+    }
+
+    .hero-image{
+        width: 50%;
+        position: absolute;
+        transform: scaleX(-1);
+        left: 354px;
+        top: 103px;
+    }
+    .hero-image img{
+        width: 435px;
+    }
+
+    /* about responsive css*/
+
+    #about{
+        width: 100%;
+        height: 820px;
+        background-color: #262526;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding-top: 0px;
+    
+    }
+    
+    .about-title{
+        text-align: center;
+        color: white;
+        font-size: 23px;
+        margin-bottom: 25px;
+        padding-top: 27px;
+        padding-left: 40px;
+        
+    }
+    
+    .about-content{
+        display: block;
+        height: 600px;
+    
+    }
+    
+    .about-img{
+        width: 96%;
+        text-align: center;
+        
+    }
+    
+    
+    #about .about-content .about-img img{
+        height: 300px;
+        padding: 0 0 0 2px;
+        border-radius: 20px;
+    }
+    
+    .responsive{
+        display: block;
+    }
+    
+    
+    
+    
+    .about-data{
+        width: 95%;
+        text-align: center;
+        color: white;
+        padding-top: 25px;
+        padding-left: 19px;
+    }
+
+    /* portfolio section css */
+    #Portfolio{
+        width: 100%;
+        height: 900px;
+        background-color: #383333;
+       
+    }
+
+    /* contact responsive css */
+
+    #Contact{
+        width: 100%;
+        height: 504px;
+        display: flex;
+        background-color: black;
+    }
+    
+    .contact-content{
+        width: 40%;
+        height: 88%;
+        padding: 59px 0 0 47px;
+        color: white;
+    }
+    
+    .contact-content h1{
+        font-size: 55px;
+        padding-bottom: 10px;
+    }
+    
+    .contact-content i{
+        color: orangered;
+        padding: 14px 10px 14px 0;
+    }
+    
+    .phone{
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    
+    .contact-content p{
+        font-size: 34px;
+        padding: 10px 0;
+    }
+    
+    .contact-form{
+        padding: 56px 2px 0 0;
+        width: 50%;
+    }
+    
+    .contact-form input{
+        height: 48px;
+        width: 96%;
+        border-radius: 6px;
+        padding-left: 12px;
+        margin: 15px 0 0 10px;
+        border: none;
+        background-color: #272627;
+    }
+    
+    ::-ms-input-placeholder { /* Edge 12-18 */
+        color: white;
+        font-size: 15px;
+        
+      }
+      
+      ::placeholder {
+        color: white;
+        font-size: 15px;
+      }
+    
+    
+    .txtarea{
+        border-radius: 7px;
+        border: none;
+        margin: 16px 2px 2px 11px;
+        width: 95%;
+        padding: 10px;
+        height: 195px;
+        background-color: #272627;
+    }
+    
+    .submit-btn{
+        border-radius: 9px;
+        border: none;
+        width: 63%;
+        height: 52px;
+        color: white;
+        background-color: orangered;
+        font-size: 16px;
+        margin: 12px 2px 2px 98px;
+    }
+    
+    
+    
+    .social-logo i{
+        color: white;
+        padding: 6px 15px;
+        font-size: 33px;
+        margin-left: -14px
+    }
+    
+
+
+
+    
+
+  }
+
+
+
+
+  
+@media only screen and (max-width: 600px){
+    
+
+    #main-container{
+        background: transparent;
+        height: 750px;
+    
+    }
+
+    .nav{
+        display: block;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .sticky{
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        background-color: #303038;
+        height: 78px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    
+
+    .logo{
+        position: relative;
+    }
+    .nav-icon{
+        display: block;
+        position: absolute;
+        left: 463px;
+        top: 29px;
+    }
+
+    #icon {
+        cursor: pointer;
+    }
+
+
+
+    .nav-content ul{
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+
+    }
+
+ 
+    .nav-content ul li{
+        display: block;
+        line-height: 70px;
+
+    }
+
+    .nav-content ul li a{
+        font-size: 25px;
+        font-weight: 600;
+        padding-left: 50px;
+    }
+
+    .nav-content ul.show{
+        left: 0;
+        background-color: rgb(35, 35, 36);
+        height: 660px;
+        top: 80px;
+    }
+
+    
+    .hero{
+        background-color: black;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        height: 700px;
+    }
+
+
+    .hero-image{
+        transform: scaleX(1);
+        margin: 2px 0px 0 -199px;
+    }
+
+    .hero-image img{
+        width: 292px;
+    }
+
+    .hero-content{
+        margin: 260px 0px 0px 9px;
+    }
+
+    .hero-content h1 span{
+        padding-left: 109px;
+        font-size: 94px
+    }
+
+    .hero-content p{
+        display: none;
+    }
+
+    .flow-text{
+        display: none;
+    }
+
+    .hero-content pre{
+        display: block;
+        margin: -27px 0 -11px 0;
+        font-size: 15px;
+    }
+
+    /* about css section */
+    #about{
+        width: 100%;
+        height: 820px;
+        background-color: #262526;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding-top: 0px;
+    
+    }
+    
+    .about-title{
+        text-align: center;
+        color: white;
+        font-size: 23px;
+        margin-bottom: 25px;
+        padding-top: 27px;
+        padding-left: 40px;
+        
+    }
+    
+    .about-content{
+        display: block;
+        height: 600px;
+    
+    }
+    
+    .about-img{
+        width: 96%;
+        text-align: center;
+        
+    }
+    
+    
+    #about .about-content .about-img img{
+        height: 300px;
+        padding: 0 0 0 2px;
+        border-radius: 20px;
+    }
+    
+    .responsive{
+        display: block;
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    .about-data{
+        width: 95%;
+        text-align: center;
+        color: white;
+        padding-top: 25px;
+        padding-left: 19px;
+    }
+
+/* porfolio section css */
+#Portfolio{
+    width: 100%;
+    height: 1300px;
+    background-color: #383333;
+   
+}
+
+.portfolio-title{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding-top: 101px;
+
+}
+
+.portfolio-title strong{
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.portfolio-project{
+    display: block;
+    
+}
+
+.pp1{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.pp1 img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 450px;
+    transition: transform 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #f74300);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 -14px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    transition: height 0.5s;
+
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.pp1:hover img{
+    transform: scale(1.1);
+}
+
+.pp1:hover .layer{
+    height: 100%;
+}
+
+
+/* responsive contact css*/
+
+#Contact{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: block;
+}
+
+.contact-content{
+    height: 88%;
+    width: 56%;
+    padding: 59px 0 0 83px;
+    color: white;
+}
+
+.contact-content h1{
+    font-size: 55px;
+    padding-bottom: 10px;
+}
+
+.contact-content i{
+    color: orangered;
+    padding: 14px 10px 14px 0;
+}
+
+.phone{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.contact-content p{
+    font-size: 34px;
+    padding: 10px 0;
+}
+
+
+.social-logo i{
+    color: white;
+    padding: 6px 15px;
+    font-size: 33px;
+    margin-left: -14px
+}
+
+.contact-form{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #272627;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    padding-top: 14px;
+    font-size: 18px;
+}
+
+
+
+
+   
+    
+
+    
+}

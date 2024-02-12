@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="icon/x-image" href="images/mini-logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <title>BOAT</title>
+</head>
+<body>
+    
+    <div class="hero" id="home1">
+        <div class="nav">
+            <div class="logo"><a href="#"><img src="images/logo.svg" alt="logo"></a></div>
+            <div class="nav-content">
+                <a href="#home1" class="btn active">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="Login & Signup Form/index.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+
+        <div class="main">
+            <a href="#"><img class="slide" src="images/background1.webp" alt="background1"></a>
+            <a href="#"><img class="slide" src="images/background2.webp" alt="background1"></a>
+            <a href="#"><img class="slide" src="images/background3.webp" alt="background1"></a>
+            <a href="#"><img class="slide" src="images/background4.webp" alt="background1"></a>
+            <a href="#"><img class="slide" src="images/background5.webp" alt="background1"></a>
+            <button class="next" onclick="next()"><img src="images/right-arrow.svg" alt="next-arrow"></button>
+            <button class="prev" onclick="prev()"><img src="images/left-arrow.svg" alt="prev-arrow"></button>
+        </div>
+        
+    </div>
+
+        <div class="bestseller">
+            <div class="bstitle">
+                <span class="title1">Explore</span><span class="title2"><b>BestSellers</b></span>
+            </div>
+            <div class="btvideos">
+                <div class="conatiner1">
+                    <video src="videos/Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand- boAt.mp4" width="313px" height="320px" loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                    <p style="text-align: center;"><b>Headphones</b></p>
+
+                </div>
+                <div class="conatiner1">
+                    <video src="videos/Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand- boAt_2.mp4" width="313px" height="320px" loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                    <p style="text-align: center;"><b>Smart watches</b></p>
+
+                </div>
+                <div class="conatiner1">
+                    <video src="videos/video1.mp4" width="313px" height="320px" loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                    <p style="text-align: center;"><b>Wireless Airbuds</b></p>
+
+                </div>
+                <div class="conatiner1">
+                    <video src="videos/video2.mp4" width="313px" height="320px" loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                    <p style="text-align: center;"><b>Neckbands</b></p>
+
+                </div>
+            </div>
+        </div>
+   
+    <div class="bestdeal">
+        <div class="bstitle">
+            <span class="title1" id="end-date">Today's</span><span class="title2"><b>Offers</b></span>
+        </div>
+        <div class="deal">
+                <img src="images/count-down-img.webp" alt="">
+                <div class="counter">
+                    <label for="" class="counter-label" id="hours">Ending in:</label>
+                    <input type="text" value="00" readonly>
+                    <label for="" class="counter-label">Hours:</label>
+                    <input type="text" value="00" readonly >
+                    <label for="" class="counter-label">Min:</label>
+                    <input type="text" value="00" readonly >
+                    <label for="" class="counter-label">Sec</label>
+
+                </div>
+        </div>
+        
+    </div>
+
+    <div class="bestseller1">
+        <div class="bstitle">
+            <span class="title1">Our</span><span class="title2"><b>Products</b></span>
+        </div>
+        <div class="products">
+            <div class="product1">
+                <div class="pic">
+                    <img src="images/airpod1.webp" alt="airpod1" width="284px " height="302.25px">
+                    <span class="imgtext">✍ Engraving Available</span>
+                    <span class="imgtext1">120 Hours Playback</span>
+                </div>
+                <div class="pricing">
+                    <div class="pname"><b>Niravana ion</b></div>
+                    <div class="price">
+                        <span class="pricers"><b>Rs1500</b></span>
+                        <button class="cartbutton">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product1">
+                <div class="pic">
+                    <img src="images/headphone.webp" alt="airpod1" width="284px " height="302.25px">
+                    <span class="imgtext">✍ Engraving Available</span>
+                    <span class="imgtext1">10 Hours Playback</span>
+                </div>
+                <div class="pricing">
+                    <div class="pname"><b>Headphone ion</b></div>
+                    <div class="price">
+                        <span class="pricers"><b>Rs1900</b></span>
+                        <button class="cartbutton">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product1">
+                <div class="pic">
+                    <img src="images/speaker.webp" alt="airpod1" width="284px " height="302.25px">
+                    <span class="imgtext">✍ Engraving Available</span>
+                    <span class="imgtext1">150 Hours Playback</span>
+                </div>
+                <div class="pricing">
+                    <div class="pname"><b>Wireless speaker</b></div>
+                    <div class="price">
+                        <span class="pricers"><b>Rs25,000</b></span>
+                        <button class="cartbutton">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product1">
+                <div class="pic">
+                    <img src="images/airpod2.webp" alt="airpod1" width="284px " height="302.25px">
+                    <span class="imgtext">✍ Engraving Available</span>
+                    <span class="imgtext1">100 Hours Playback</span>
+                </div>
+                <div class="pricing">
+                    <div class="pname"><b>earpuds ion</b></div>
+                    <div class="price">
+                        <span class="pricers"><b>Rs1500</b></span>
+                        <button class="cartbutton">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="productssecond">
+            <div class="product1">
+                <div class="pic">
+                    <img src="images/headphone1.gif" alt="airpod1" width="284px " height="302.25px">
+                    <span class="imgtext">✍ Engraving Available</span>
+                    <span class="imgtext1">120 Hours Playback</span>
+                </div>
+                <div class="pricing">
+                    <div class="pname"><b>Headphones</b></div>
+                    <div class="price">
+                        <span class="pricers"><b>Rs3500</b></span>
+                        <button class="cartbutton">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product1">
+                <div class="pic">
+                    <img src="images/airpod3.webp" alt="airpod1" width="284px " height="302.25px">
+                    <span class="imgtext">✍ Engraving Available</span>
+                    <span class="imgtext1">50 Hours Playback</span>
+                </div>
+                <div class="pricing">
+                    <div class="pname"><b>earpuds rock</b></div>
+                    <div class="price">
+                        <span class="pricers"><b>Rs1500</b></span>
+                        <button class="cartbutton">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product1">
+                <div class="pic">
+                    <img src="images/watch1.webp" alt="airpod1" width="284px " height="302.25px">
+                    <span class="imgtext">✍ Engraving Available</span>
+                    <span class="imgtext1">120 Hours Playback</span>
+                </div>
+                <div class="pricing">
+                    <div class="pname"><b>Watch</b></div>
+                    <div class="price">
+                        <span class="pricers"><b>Rs45,000</b></span>
+                        <button class="cartbutton">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product1">
+                <div class="pic">
+                    <img src="images/watch.webp" alt="airpod1" width="284px " height="302.25px">
+                    <span class="imgtext">✍ Engraving Available</span>
+                    <span class="imgtext1">52 Hours Playback</span>
+                </div>
+                <div class="pricing">
+                    <div class="pname"><b>Digital watch</b></div>
+                    <div class="price">
+                        <span class="pricers"><b>Rs1500</b></span>
+                        <button class="cartbutton">Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="images/f1.png">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f2.png">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f3.png">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f6.png">
+            <h6>24/7 Support</h6>
+        </div>
+        
+        
+    </section>
+
+    <div class="ourteam">
+        <div class="team">
+            <span class="title1">Shop by</span><span class="title2"><b>LifeStyle</b></span>
+        </div>
+        <div class="ourmember">
+
+            <div class="teammate">
+        <div class="mem1">
+            <a href="#"><img src="team/person1.webp" alt="member1"></a>
+        </div>
+        <div class="memtitle">
+            <h2>For Fitness</h2>
+            <a href="#">view all</a>
+        </div> 
+        </div>
+        <div class="teammate">
+            <div class="mem1">
+                <a href="#"><img src="team/person2.webp" alt="member1"></a>
+            </div>
+            <div class="memtitle">
+                <h2>For Parties</h2>
+                <a href="#">view all</a>
+            </div> 
+            </div>
+            <div class="teammate">
+                <div class="mem1">
+                    <a href="#"><img src="team/person3.webp" alt="member1"></a>
+                </div>
+                <div class="memtitle">
+                    <h2>For Music</h2>
+                    <a href="#">view all</a>
+                </div> 
+                </div>
+                <div class="teammate">
+                    <div class="mem1">
+                        <a href="#"><img src="team/person4.webp" alt="member1"></a>
+                    </div>
+                    <div class="memtitle">
+                        <h2>For Audio</h2>
+                        <a href="#">view all</a>
+                    </div> 
+                    </div>
+                    <div class="teammate">
+                        <div class="mem1">
+                            <a href="#"><img src="team/person5.webp" alt="member1"></a>
+                        </div>
+                        <div class="memtitle">
+                            <h2>For Fitness</h2>
+                            <a href="#">view all</a>
+                        </div> 
+                        </div>
+
+
+
+        </div>
+
+
+
+        </div>
+       
+    <div class="tribe">
+        <div class="tibe-title">
+            <span class="title1">Join the</span><span class="title2"><b>Tribe</b></span>
+        </div>
+        <div class="tribe-section">
+            <div class="tribe-video">
+            
+                <video src="videos/portal2/Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand- boAt.mp4" autoplay loop muted  width="100%" height="390px"></video>
+        
+        
+                <div class="tprice">
+                    <h4>Airdrops 131</h4>
+                    <p style="font-weight: 600;">Rs999 <del style="color: #A8AFB6;"> Rs2000</del> <span style="color: #12C0B8;">67% off</span></p>
+                </div>
+            </div>
+    
+            <div class="tribe-video">
+        
+                <video src="videos/portal2/Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand- boAt_2.mp4" autoplay loop muted  width="100%" height="390px"></video>
+        
+                <div class="tprice">
+                    <h4>Party pal 198</h4>
+                    <p style="font-weight: 600;">Rs999 <del style="color: #A8AFB6;"> Rs2000</del> <span style="color: #12C0B8;">67% off</span></p>
+                </div>
+            </div>
+    
+            <div class="tribe-video">
+        
+                <video src="videos/portal2/Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand- boAt_3.mp4" autoplay loop muted width="100%" height="390px"></video>
+        
+                <div class="tprice">
+                    <h4>Wave Elevate pro</h4>
+                    <p style="font-weight: 600;">Rs999 <del style="color: #A8AFB6;"> Rs2000</del> <span style="color: #12C0B8;">67% off</span></p>
+                </div>
+            </div>
+    
+            <div class="tribe-video">
+        
+                <video src="videos/portal2/Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand- boAt_4.mp4" autoplay loop muted  width="100%" height="390px"></video>
+        
+                <div class="tprice">
+                    <h4>Niravana Ion ANC</h4>
+                    <p style="font-weight: 600;">Rs999 <del style="color: #A8AFB6;"> Rs2000</del> <span style="color: #12C0B8;">67% off</span></p>
+                </div>
+            </div>
+    
+            <div class="tribe-video">
+        
+                <video src="videos/portal2/Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand- boAt_5.mp4" autoplay loop muted width="100%" height="390px"></video>
+        
+                <div class="tprice">
+                    <h4>Airdops item 83</h4>
+                    <p style="font-weight: 600;">Rs999 <del style="color: #A8AFB6;"> Rs2000</del> <span style="color: #12C0B8;">67% off</span></p>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+       
+        <footer id="footer" class="section-p1">
+            <div class="col">
+                <img class="logo" src="images/logo.svg" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong>19 Street,Model town,lahore,punjab</p>
+                <p><strong>Phone:</strong>+92 123456789</p>
+                <p><strong>Hours:</strong>9am-5pm, Mon-Sat</p>
+                <h4>Follow Us</h4>
+                <div class="follow">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms $ Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign in</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                <img src="images/pay.png" alt="">
+                <img src="images/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways </p>
+                <img src="images/app.jpg" alt="">
+                </div>
+                <div class="copyright">
+                    <p>© Copyright 2024 <b>Kashif ali</b> Portfolio Web Project</p>
+                </div>
+        </footer>
+
+
+
+
+    <script src="function.js"></script>
+</body>
+</html>
