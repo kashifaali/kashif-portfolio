@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #main-container{
     width: 100%;
     height: 675px;
@@ -87,6 +91,9 @@
     color: orangered;
 }
 
+
+
+
 .nav-icon{
     color: white;
     font-size: 26px;
@@ -145,6 +152,7 @@
     background-color: orangered;
     color: white;
     display: inline-block;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
@@ -363,6 +371,7 @@
     margin: 15px 0 0 10px;
     border: none;
     background-color: #272627;
+    color: white;
 }
 
 ::-ms-input-placeholder { /* Edge 12-18 */
@@ -382,6 +391,7 @@
     border: none;
     margin: 16px 2px 2px 11px;
     width: 95%;
+    color: white;
     padding: 10px;
     height: 195px;
     background-color: #272627;
@@ -396,6 +406,7 @@
     background-color: orangered;
     font-size: 16px;
     margin: 12px 2px 2px 138px;
+    cursor: pointer;
 }
 
 
@@ -423,7 +434,105 @@ footer{
 
 /* responsive main container section */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1194px){
+    #main-container{
+        background-color: black;
+    }
+    .nav{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        background-color: #26262c;
+        height: 78px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .sticky{
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        background-color: #303038;
+        height: 78px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .hero{
+        display: flex;
+        width: 100%;
+        padding-top: 80px;
+    }
+    
+    .hero-content{
+        width: 44%;
+        padding: 78px 0 0 92px;
+    }
+    .hero-content small{
+        font-size: 22px;
+        color: white;
+        font-weight: 700;
+        padding: 0 0px 0px 5px 
+    }
+    
+    .hero-content h1{
+        font-size: 98px;
+        color: white;
+        margin: -20px 0 -20px 0;
+    }
+    
+    .hero-content h1 strong{
+        color: orangered;
+    }
+    
+    .hero-content p{
+        font-size: 22px;
+        color: white;
+        padding: 0px 0px 11px 5px;
+    }
+    
+    .flow-text{
+        color: orangered;
+        font-size: 28px;
+        font-weight: 600;
+    
+    }
+    
+    .cv-button{
+        padding: 6px 24px;
+        margin: 25px 5px 5px -1px;
+        font-size: 27px;
+        font-weight: 600;
+        border: none;
+        border-radius: 7px;
+        background-color: orangered;
+        color: white;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    
+    .cv-button:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    
+        .linkedin img {
+            top: 16px;
+            left: 8px;
+            position: relative;
+            width: 47px;
+            height: 45px;
+            border-radius: 5px;
+    }
+    
+    .hero-image{
+        width: 56%;
+        transform: scaleX(-1);
+
+    }
+    
+}
+
+
+@media only screen and (max-width: 1071px) {
     #main-container{
         width: 100%;
         height: 685px;
@@ -595,11 +704,10 @@ footer{
 }
 
  
-    }
-    
+    }    
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 926px) {
     #main-container {
       background-color: black;
       height: 600px;
@@ -861,7 +969,221 @@ footer{
 
   }
 
+@media only screen and (max-width: 790px){
+    #Contact{
+        width: 100%;
+    height: 618px;
+    position: relative;
+    display: block;
+    background-color: black;
+    }
+    
+    .contact-content{
+        width: 100%;
+    height: 88%;
+    text-align: center;
+    padding: 59px 0 0 0;
+    color: white;
+    font-size: 30px
+    }
+    
+    .contact-content h1{
+        font-size: 55px;
+    padding-bottom: 10px;
+    }
+    
+    .contact-content i{
+        color: orangered;
+        padding: 14px 10px 14px 0;
+        display: none;
+    }
+    
+    .phone{
+        font-size: 18px;
+        padding: 10px 0;
+        display: none;
+    }
+    
+    .contact-content p{
+        font-size: 34px;
+        padding: 10px 0;
+        display: none;
+    }
+    .social-logo{
+        display: none;
+    }
+    
+    .contact-form{
+        padding: 56px 2px 0 0;
+        width: 72%;
+        position: absolute;
+        top: 81px;
+        left: 111px;
+    }
+    
+    .contact-form input{
+        height: 48px;
+        width: 96%;
+        border-radius: 6px;
+        padding-left: 12px;
+        margin: 15px 0 0 10px;
+        border: none;
+        background-color: #272627;
+    }
+    
+    ::-ms-input-placeholder { /* Edge 12-18 */
+        color: white;
+        font-size: 15px;
+        
+      }
+      
+      ::placeholder {
+        color: white;
+        font-size: 15px;
+      }
+    
+    
+    .txtarea{
+        border-radius: 7px;
+        border: none;
+        margin: 16px 2px 2px 11px;
+        width: 95%;
+        padding: 10px;
+        height: 195px;
+        background-color: #272627;
+    }
+    
+    .submit-btn{
+        border-radius: 9px;
+        border: none;
+        width: 63%;
+        height: 52px;
+        color: white;
+        background-color: orangered;
+        font-size: 16px;
+        margin: 12px 2px 2px 138px;
+    }
+    
+    
+    
+    .social-logo i{
+        color: white;
+        padding: 6px 15px;
+        font-size: 33px;
+        margin-left: -14px
+    }
+    
+    footer{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        background-color: #272627;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        color: white;
+        padding-top: 14px;
+        font-size: 18px;
+    }
+    
+}
 
+@media only screen and (max-width: 681px){
+    #main-container {
+        background-color: black;
+        height: 600px;
+      }
+      .logo {
+          width: 30%;
+          padding: 2px 0 0 34px;
+      }   
+  
+      .sticky{
+          position: fixed;
+          width: 100%;
+          z-index: 99;
+          background-color: #303038;
+          height: 78px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+  
+      .nav-content ul li a{
+          text-decoration: none;
+          color: white;
+          padding: 5px 0px 5px 5px;
+          margin: 0 14px 0 0px;
+          font-size: 19px;
+          font-weight: 500;
+          
+      }
+  
+  
+      .hero-content small{
+          font-size: 22px;
+          color: white;
+          font-weight: 700;
+          padding: 0 0px 0px 5px 
+      }
+      
+      .hero-content h1{
+          font-size: 67px;
+          color: white;
+          margin: -14px 0 -14px 0
+      }
+      .hero-content h1 span{
+          color: orangered;
+      }
+      
+      .hero-content h1 strong{
+          display: none;
+  
+      }
+      
+      .hero-content p{
+          font-size: 21px;
+          color: white;
+          font-weight: 600;
+          padding: 0px 0px 11px 5px;
+      }
+      
+      .flow-text{
+          color: orangered;
+          font-size: 28px;
+          font-weight: 600;
+          white-space: pre;
+      
+      }
+      
+      .cv-button{
+          padding: 6px 24px;
+          margin: 25px 5px 5px -1px;
+          font-size: 27px;
+          font-weight: 600;
+          border: none;
+          border-radius: 7px;
+          background-color: orangered;
+          color: white;
+          display: inline-block;
+          transition: all 0.3s ease;
+      }
+  
+      .hero-content pre{
+          display: none;
+      }
+  
+      .hero-image{
+          width: 50%;
+          position: absolute;
+          transform: scaleX(-1);
+          left: 354px;
+          top: 103px;
+      }
+      .hero-image img{
+          width: 405px;
+      }
+
+      .portfolio-project{
+        margin-left: 30px;
+      }
+}
 
 
   
@@ -1065,6 +1387,7 @@ footer{
     width: 80%;
     height: 300px;
     margin-bottom: 50px;
+    margin-left: 30px;
 }
 
 .pp1 img{
@@ -1129,7 +1452,7 @@ footer{
 
 #Contact{
     width: 100%;
-    height: 400px;
+    height: 354px;
     background-color: black;
     display: block;
 }
@@ -1147,27 +1470,33 @@ footer{
 }
 
 .contact-content i{
-    color: orangered;
-    padding: 14px 10px 14px 0;
+    color: white;
+    padding: 0px 10px 0px 0;
+    display: block;
+    position: absolute;
+    left: 71px;
 }
 
 .phone{
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 23px;
+    padding: 0 0 0 30px;
+    display: block;
 }
+.phone11{
+    font-size: 22px;
+    padding: 10px 0;
+    display: block;
+    position: absolute;
+    top: 221px;
+    left: 114px;
 
+}
 .contact-content p{
     font-size: 34px;
-    padding: 10px 0;
+    padding: 50px 0;
+    display: none;
 }
 
-
-.social-logo i{
-    color: white;
-    padding: 6px 15px;
-    font-size: 33px;
-    margin-left: -14px
-}
 
 .contact-form{
     display: none;
@@ -1183,10 +1512,17 @@ footer{
     padding-top: 14px;
     font-size: 18px;
 }
+
+
+
+
+   
+    
+
     
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 400px){
     
 
     #main-container{
@@ -1199,12 +1535,12 @@ footer{
         display: block;
         z-index: 1;
         position: fixed;
-        width: 91%;
+        width: 75%;
     }
 
     .sticky{
         position: fixed;
-        width: 91%;
+        width: 100%;
         z-index: 99;
         background-color: #303038;
         height: 78px;
@@ -1219,8 +1555,8 @@ footer{
     .nav-icon{
         display: block;
         position: absolute;
-        left: 314px;
-        top: 31px;
+        left: 330px;
+        top: 29px;
     }
 
     #icon {
@@ -1256,7 +1592,6 @@ footer{
         background-color: rgb(35, 35, 36);
         height: 660px;
         top: 80px;
-        width: 91%;
     }
 
     
@@ -1271,7 +1606,7 @@ footer{
 
     .hero-image{
         transform: scaleX(1);
-        margin: 2px 0px 0 -296px;
+        margin: 2px 0px 0 -292px;
     }
 
     .hero-image img{
@@ -1279,11 +1614,11 @@ footer{
     }
 
     .hero-content{
-        margin: 260px 0px 0px -19px;
+        margin: 260px 0px 0px -16px;
     }
 
     .hero-content h1 span{
-        padding-left: 48px;
+        padding-left: 109px;
         font-size: 94px
     }
 
@@ -1298,7 +1633,7 @@ footer{
     .hero-content pre{
         display: block;
         margin: -27px 0 -11px 0;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     /* about css section */
@@ -1317,7 +1652,7 @@ footer{
         font-size: 23px;
         margin-bottom: 25px;
         padding-top: 27px;
-        padding-left: 0;
+        padding-left: 40px;
         
     }
     
@@ -1328,7 +1663,7 @@ footer{
     }
     
     .about-img{
-        width: 88%;
+        width: 96%;
         text-align: center;
         
     }
@@ -1342,7 +1677,7 @@ footer{
     
     .responsive{
         display: block;
-        font-size: 9px;
+        font-size: 14px;
     }
     
     
@@ -1388,6 +1723,7 @@ footer{
     width: 80%;
     height: 300px;
     margin-bottom: 50px;
+    margin-left: 30px;
 }
 
 .pp1 img{
@@ -1452,46 +1788,51 @@ footer{
 
 #Contact{
     width: 100%;
-    height: 411px;
+    height: 354px;
     background-color: black;
     display: block;
 }
 
 .contact-content{
     height: 88%;
-    width: 100%;
-    padding: 59px 0 0 38px;
+    width: 56%;
+    padding: 59px 0 0 83px;
     color: white;
 }
 
 .contact-content h1{
-    font-size: 50px;
+    font-size: 55px;
     padding-bottom: 10px;
 }
 
 .contact-content i{
-    color: orangered;
-    padding: 14px 10px 14px 0;
-    font-size: 22px;
+    color: white;
+    padding: 0px 10px 0px 0;
+    display: block;
+    position: absolute;
+    left: 71px;
 }
 
 .phone{
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 23px;
+    padding: 0 0 0 30px;
+    display: block;
 }
+.phone11{
+    font-size: 22px;
+    padding: 10px 0;
+    display: block;
+    position: absolute;
+    top: 221px;
+    left: 114px;
 
+}
 .contact-content p{
     font-size: 34px;
-    padding: 10px 0;
+    padding: 50px 0;
+    display: none;
 }
 
-
-.social-logo i{
-    color: white;
-    padding: 6px 15px;
-    font-size: 33px;
-    margin-left: -14px
-}
 
 .contact-form{
     display: none;
@@ -1507,6 +1848,12 @@ footer{
     padding-top: 14px;
     font-size: 18px;
 }
+
+
+
+
+   
+    
+
     
 }
-
